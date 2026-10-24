@@ -6,7 +6,7 @@ const target = path.join(root, '_site');
 await rm(target, { recursive: true, force: true });
 await mkdir(target, { recursive: true });
 for (const entry of await readdir(root, { withFileTypes: true })) {
-  if (entry.isFile() && /\.(html|css|js)$/.test(entry.name)) {
+  if (entry.isFile() && (/\.(html|css|js)$/.test(entry.name) || ['CNAME', 'robots.txt', 'sitemap.xml'].includes(entry.name))) {
     await copyFile(path.join(root, entry.name), path.join(target, entry.name));
   }
 }
