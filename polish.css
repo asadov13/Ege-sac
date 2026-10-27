@@ -257,3 +257,9 @@ footer{max-width:1440px}.footer-top{gap:40px}.footer-links,.footer-contact{font-
 .header .logo img,.home .header .logo img{display:block;width:136px;height:78px;max-width:none;flex:none;object-fit:contain;transform:translateY(-3px)}
 @media(max-width:1280px){.header .logo,.home .header .logo{width:130px}.header .logo img,.home .header .logo img{width:128px;height:74px}}
 @media(max-width:620px){.header .logo,.home .header .logo{width:120px;height:62px}.header .logo img,.home .header .logo img{width:120px;height:70px;transform:translateY(-2px)}}
+
+/* Center the original-color animated mark within a compact, padded badge. */
+.header .logo,.home .header .logo{display:flex;align-items:center;justify-content:center;align-self:center;background:#f6f1e8;border-radius:12px;width:124px;height:72px;padding:4px 8px;box-sizing:border-box;overflow:hidden}
+.header .logo picture{display:flex;align-items:center;justify-content:center;width:100%;height:100%;line-height:0}
+.header .logo img,.home .header .logo img{display:block;filter:none;opacity:1;mix-blend-mode:normal;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;transform:none}
+@media(max-width:620px){.header .logo,.home .header .logo{width:110px;height:62px;padding:4px 8px}}

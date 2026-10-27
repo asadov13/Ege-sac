@@ -111,3 +111,19 @@
 }
 .inner-page .service-detail-art>.service-mark{color:var(--paper)}
 @media(max-width:620px){.about-visual .page-strands{bottom:0;opacity:.18}}
+
+.inner-page .blog-card+.blog-card{padding-top:36px;margin-top:36px;border-top:1px solid var(--line)}
+.pending-article-image{aspect-ratio:3/2;background:#431d2608;border:1px solid var(--line);border-radius:100px 8px 8px 8px}
+.blog-article ul{padding-left:24px;margin:24px 0 32px;color:var(--muted)}
+.blog-article li{padding:6px 0;font-size:16px;line-height:1.8}
+
+/* Supplied A02–A06 artwork stays uncropped, including embedded headings. */
+.service-client-image,.article-client-image,.result-client-image{margin:0;min-width:0}
+.service-client-image{align-self:start;position:sticky;top:32px}
+.service-client-image img,.article-client-image img,.result-client-image img,.inner-page .blog-card .client-blog-cover{display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:3/2;border-radius:12px}
+.article-client-image{margin:28px 0 36px}
+.additional-result{padding-top:0}
+.result-client-image{position:relative;max-width:820px;margin-inline:auto;overflow:hidden;border-radius:12px}
+.result-eye-cover{position:absolute;top:65%;height:9%;width:30%;display:flex;align-items:center;justify-content:center;border-radius:999px;background:#431d26;color:#f6f1e8;font-size:clamp(12px,2vw,22px);font-weight:650;line-height:1}
+.result-eye-cover.before{left:10%}.result-eye-cover.after{left:60%}
+@media(max-width:900px){.service-client-image{position:static}}
